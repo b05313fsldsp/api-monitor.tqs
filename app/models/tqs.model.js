@@ -4,6 +4,7 @@
 module.exports = mongoose => {
   var schema = mongoose.Schema(
     {
+      sn: String,
       status: String, // title
       concentration: Number,  // SN
       temp2: Number,  // CANID

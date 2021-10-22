@@ -11,6 +11,7 @@ exports.create = (req, res) => {
 
   // Create a Tqs
   const tqs = new Tqs({
+    sn: req.headers.sn, //sn
     status: req.body.status,  // title
     concentration: req.body.concentration,  // SN
     temp2: req.body.temp2, // CANID
